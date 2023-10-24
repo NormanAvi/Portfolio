@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Urbanist:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  line-height: 1;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+body.dark {
+  background-color: black;
+  color: hsl(0, 0%, 90%);
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border: 6px solid white;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body.dark::-webkit-scrollbar-track {
+  background: black;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 90%);
+  border-color: black;
+}
+
+body.dark::-webkit-scrollbar-thumb:hover {
+  background: white;
+}

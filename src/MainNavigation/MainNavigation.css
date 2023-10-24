@@ -1,0 +1,58 @@
+.mainNavigation ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.mainNavigation a {
+  font-family: "Urbanist", sans-serif;
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  position: relative;
+}
+
+.mainNavigation a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  bottom: -2px;
+  transform: scaleX(0);
+  transition: transform 0.25s;
+}
+
+@media (prefers-reduced-motion) {
+  .mainNavigation a::after {
+    transition: none;
+  }
+}
+
+body.dark .mainNavigation a::after {
+  background-color: hsl(0, 0%, 90%);
+}
+
+@media (max-width: 480px) {
+  .mainNavigation a {
+    font-size: 1em;
+  }
+
+  .mainNavigation a::after {
+    height: 1.5px;
+    bottom: -1.5px;
+  }
+}
+
+.mainNavigation a:focus::after,
+.mainNavigation a:hover::after,
+.mainNavigation a:active::after {
+  transform: scaleX(1.2);
+}
+
+.mainNavigation a.selected::after {
+  transform: scaleX(1.5);
+}

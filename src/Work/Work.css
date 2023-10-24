@@ -1,0 +1,96 @@
+.imageCategory:not(:last-child) {
+  margin-bottom: 5em;
+}
+
+.imageCategory h2 {
+  font-family: "Urbanist", sans-serif;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+@media (max-width: 800px) {
+  .imageCategory h2 {
+    font-size: 1.5em;
+  }
+}
+
+.imageCategory .images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+@media (max-width: 1080px) {
+  .imageCategory .images {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .imageCategory .images {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5em;
+  }
+}
+
+.imageCategory .image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center center;
+  border: 3px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+body.dark .imageCategory .image {
+  border-color: hsl(0, 0%, 90%);
+}
+
+@media (max-width: 800px) {
+  .imageCategory .image {
+    border-width: 2px;
+  }
+}
+
+.imageCategory .image .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 90%) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 1em;
+  justify-content: center;
+  color: white;
+  font-size: 1.35em;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(1em);
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+@media (prefers-reduced-motion) {
+  .imageCategory .image .overlay {
+    transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageCategory .image .overlay {
+    font-size: 1em;
+  }
+}
+
+.imageCategory .image:hover .overlay,
+.imageCategory .image:active .overlay,
+.imageCategory .image:focus .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
