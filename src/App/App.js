@@ -39,13 +39,7 @@ const App = () => {
         toggleDarkMode={toggleDarkMode}
         isDarkMode={isDarkMode}
       />
-      <main
-        style={
-          !prefersReducedMotion
-            ? { paddingTop: `calc(${stickyHeaderHeight}px + 2em)` }
-            : { paddingTop: "2em" }
-        }
-      >
+      <main style={{ paddingTop: "3rem" }}>
         <Routes>
           <Route path="/" element={<Work />} />
           <Route path="/works/:category/:image" element={<Image />} />

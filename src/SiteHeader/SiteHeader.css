@@ -1,5 +1,4 @@
 .siteHeader {
-  border: 3px solid black;
   width: 100%;
   max-width: 100%;
   aspect-ratio: 2 / 1;
@@ -12,8 +11,13 @@
   padding: 1em;
   margin-bottom: 1em;
   transition: aspect-ratio 0.25s;
+  max-height: 25rem;
 }
-
+.frame {
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
 @media (min-aspect-ratio: 2/1) {
   .siteHeader {
     aspect-ratio: 5 / 2;
@@ -29,6 +33,11 @@
 @media (max-width: 800px) {
   .siteHeader {
     border-width: 2px;
+  }
+  .frame {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
   }
 }
 

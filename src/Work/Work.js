@@ -10,10 +10,8 @@ const Work = () => (
         <h2>{category.name}</h2>
         <div className="images">
           {category.images.map((image) => (
-            <Link
-              key={image.id}
+            <div
               className="image"
-              to={`/works/${category.folder}/${image.id}/`}
               style={{
                 backgroundImage: `url(/images/${category.folder}/${image.id}/${image.thumbnail})`,
                 ...(image.backgroundPosition && {
@@ -24,7 +22,7 @@ const Work = () => (
               <div className="overlay">
                 <span>{image.name}</span>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>

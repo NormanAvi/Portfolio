@@ -11,43 +11,16 @@ const TopNavigation = ({ toggleDarkMode, isDarkMode }) => (
       <div
         className={`darkModeToggleButton ${isDarkMode ? "on" : "off"}`}
       ></div>
-      <span>{isDarkMode ? "Turn off dark mode" : "Turn on dark mode"}</span>
+      <span>{isDarkMode ? "Dark mode Off" : "Dark mode On"}</span>
     </button>
     <ul>
       <li>
         <a
-          href="mailto:tothmarcellakos@gmail.com"
+          href="mailto:norman.avimar@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={MailIcon} alt="Send me an email" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.facebook.com/T%C3%B3th-Marcell-%C3%81kos-103071485764790"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={FacebookIcon} alt="Follow me on Facebook" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://instagram.com/tothmarcellakos"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={InstagramIcon} alt="Follow me on Instagram" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/tothmarcellakos/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={LinkedInIcon} alt="Connect with me on LinkedIn" />
         </a>
       </li>
     </ul>

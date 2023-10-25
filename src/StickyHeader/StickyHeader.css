@@ -1,7 +1,6 @@
 .stickyHeader {
-  position: fixed;
-  width: calc(100% - 2em);
-  max-width: calc(1280px);
+  width: 100%;
+
   top: 0;
   padding-top: 1em;
   background-color: white;
@@ -14,7 +13,8 @@ body.dark .stickyHeader {
 
 @media (max-width: 800px) {
   .stickyHeader {
-    width: calc(100% - 1em);
+    width: 100%;
+
     padding-top: 0.5em;
   }
 }

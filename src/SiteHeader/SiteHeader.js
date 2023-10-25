@@ -3,8 +3,9 @@ import classNames from "classnames";
 
 import "./SiteHeader.css";
 
-import Header from "./header.jpg";
-import Signature from "./signature.png";
+import Header from "./PortfolioBanner.png";
+import Signature from "./Norman Avila.png";
+import Frame from "./PortfolioGraphics.png";
 
 const SiteHeader = () => {
   const [isScrollPositionOnTop, setIsScrollPositionOnTop] = useState(true);
@@ -30,9 +31,14 @@ const SiteHeader = () => {
       })}
       style={{
         backgroundImage: `url(${Header})`,
+        display: "flex",
+        flexDirection: "column",
+        alignContent: "center",
+        alignItems: "center",
       }}
     >
-      <img src={Signature} alt="Tóth Marcell Ákos" />
+      <img className="frame" src={Frame} alt="Norman Avila" />
+      <img src={Signature} alt="Norman Avila" />
     </header>
   );
 };

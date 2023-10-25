@@ -1,6 +1,6 @@
 import "./SiteFooter.css";
 
-const publishedYear = 2022;
+const publishedYear = 2023;
 const currentYear = new Date().getFullYear();
 const copyrightYear =
   currentYear > publishedYear
@@ -10,11 +10,8 @@ const copyrightYear =
 const SiteFooter = () => {
   return (
     <footer className="siteFooter">
-      <p>
-        Huh, no annoying popups? That's right, this website doesn't use any
-        cookies. We don't store any of your data. You aren't being tracked here.
-      </p>
-      <p>© {copyrightYear} Tóth Marcell Ákos. All rights reserved.</p>
+      <p>"Do what makes your soul shine"</p>
+      <p>© {copyrightYear} Norman Gael Ávila Martínez. All rights reserved.</p>
     </footer>
   );
 };
