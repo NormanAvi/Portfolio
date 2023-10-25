@@ -41,11 +41,9 @@
 
 .about .profilePicture {
   width: 100%;
-  border: 3px solid black;
+
   display: block;
   margin-bottom: 1em;
-  filter: grayscale(100%);
-  transition: filter 0.5s;
 }
 
 @media (prefers-reduced-motion) {
@@ -56,10 +54,6 @@
 
 body.dark .about .profilePicture {
   border-color: hsl(0, 0%, 90%);
-}
-
-.about .profilePicture:hover {
-  filter: grayscale(0%);
 }
 
 @media (max-width: 920px) {

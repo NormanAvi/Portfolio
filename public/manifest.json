@@ -1,15 +1,15 @@
 {
-  "short_name": "Tóth Marcell Ákos",
-  "name": "Tóth Marcell Ákos",
+  "short_name": "Norman Avila",
+  "name": "Norman Ávila",
   "icons": [
     {
-      "src": "logo192.jpg",
+      "src": "LogoN.png",
       "sizes": "192x192 64x64 32x32 24x24 16x16",
-      "type": "image/jpeg"
+      "type": "image/png"
     },
     {
-      "src": "logo512.jpg",
-      "type": "image/jpeg",
+      "src": "LogoN.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],

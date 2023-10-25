@@ -15,7 +15,7 @@ const MainNavigation = () => {
             to="/"
             className={classNames({ selected: location.pathname === "/" })}
           >
-            Work
+            Portfolio
           </Link>
         </li>
         <li>

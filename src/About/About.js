@@ -1,30 +1,27 @@
 import "./About.css";
 
-import ProfilePicture from "./profile.jpg";
+import ProfilePicture from "./PortfolioAbout.png";
 
 const About = () => {
   return (
     <div className="about">
       <div className="columns">
         <div className="heading">
-          <h1>Hi, I’m Marcell.</h1>
+          <h1>Hi, I’m Norman!</h1>
         </div>
         <div className="info">
-          <p>
-            I am a graphic designer, illustrator and digital artist. I enjoy
-            creating art, whether it be about issues personal to me, things that
-            relate to our world at large, or simply something beautiful to
-            share.
+          <p style={{ textAlign: "justify" }}>
+            I am a mexican digital artist who enjoys creating illustrations in
+            which I can express my ideas and creativity. What I like to do the
+            most is character design, either as fanart or my own.
           </p>
-          <p>
-            The thing I value above all else is humanity and I try to bring it
-            to whatever project I’m working on. I find it important to stand up
-            for human rights and try to be an ally to those who need one. When
-            it comes to editorial work, I hope to shine a light on politics’
-            injustices, face people’s privileges and prejudices – including my
-            own – and show the importance of taking mental health seriously. I
-            love to observe the world of artists, which easily keeps me humble
-            and ever curious.
+          <p style={{ textAlign: "justify" }}>
+            I actually studied mechatronics, and I have developed my passion for
+            art since I was very young as a hobby. In the future I would like to
+            be able to create projects in which I can combine both areas, since
+            I believe that there is great potential in being able to make
+            artistic ideas come true through technology and engineering
+            principles.
           </p>
         </div>
         <div className="profile">

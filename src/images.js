@@ -47,23 +47,53 @@ const categories = [
   },
   {
     name: "Semi-realism",
-    folder: "social-political",
+    folder: "semi-realism",
     images: [
       {
-        id: "april-of-22",
-        name: "April of ‘22",
-        thumbnail: "thumb.jpg",
+        id: "Matraka",
+        name: "Matraka",
+        thumbnail: "base.png",
+      },
+      {
+        id: "AsItWas",
+        name: "As It Was",
+        thumbnail: "base.png",
+      },
+      {
+        id: "Queen",
+        name: "Flowers",
+        thumbnail: "base.png",
+      },
+      {
+        id: "Flowers",
+        name: "Queen of Queens",
+        thumbnail: "base.png",
       },
     ],
   },
   {
     name: "Videogame Art",
-    folder: "color-drawings",
+    folder: "videogame-art",
     images: [
       {
-        id: "single",
-        name: "Single",
-        thumbnail: "thumb.jpg",
+        id: "KALogo",
+        name: "K.A Logo",
+        thumbnail: "base.png",
+      },
+      {
+        id: "KACover",
+        name: "K.A Cover",
+        thumbnail: "base.png",
+      },
+      {
+        id: "KAIcons",
+        name: "K.A Icons",
+        thumbnail: "base.png",
+      },
+      {
+        id: "Portfolio",
+        name: "Portfolio Banner",
+        thumbnail: "base.png",
       },
     ],
   },
