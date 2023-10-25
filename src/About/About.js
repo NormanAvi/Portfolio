@@ -28,7 +28,7 @@ const About = () => {
           <img
             className="profilePicture"
             src={ProfilePicture}
-            alt="Tóth Marcell Ákos"
+            alt="Norman Avila"
           />
         </div>
       </div>
