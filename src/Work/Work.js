@@ -11,10 +11,11 @@ const Work = () => (
         <div className="images">
           {category.images.map((image) => (
             <div
+              key={image.id}
               className="image"
+              to={`/works/${category.folder}/${image.id}/`}
               style={{
-                backgroundImage: `url(./images/${category.folder}/${image.id}/${image.thumbnail})`,
-
+                backgroundImage: `url(/images/${category.folder}/${image.id}/${image.thumbnail})`,
                 ...(image.backgroundPosition && {
                   backgroundPosition: image.backgroundPosition,
                 }),
