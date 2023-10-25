@@ -12,7 +12,7 @@ const MainNavigation = () => {
       <ul>
         <li>
           <Link
-            to="/"
+            to={process.env.PUBLIC_URL + "/"}
             className={classNames({ selected: location.pathname === "/" })}
           >
             Portfolio

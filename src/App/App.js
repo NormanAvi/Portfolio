@@ -41,7 +41,8 @@ const App = () => {
       />
       <main style={{ paddingTop: "3rem" }}>
         <Routes>
-          <Route path="/" element={<Work />} />
+          <Route path="" element={<Work />} />
+          <Route path="/Portfolio" element={<Work />} />
           <Route path="/works/:category/:image" element={<Image />} />
           <Route path="/about" element={<About />} />
         </Routes>
