@@ -13,7 +13,8 @@ const Work = () => (
             <div
               className="image"
               style={{
-                backgroundImage: `url(/images/${category.folder}/${image.id}/${image.thumbnail})`,
+                backgroundImage: `url(./images/${category.folder}/${image.id}/${image.thumbnail})`,
+
                 ...(image.backgroundPosition && {
                   backgroundPosition: image.backgroundPosition,
                 }),
