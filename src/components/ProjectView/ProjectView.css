@@ -46,6 +46,13 @@
     transform: scale(0.97);
 }
 
+.game-link__arrow {
+    width: auto;
+    height: 12px;
+    display: block;
+    margin-left: 0.4rem;
+}
+
 .project__studio {
     margin-top: 1.75rem;
     font-weight: 600;

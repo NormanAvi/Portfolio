@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import Lightbox from "../Lightbox/Lightbox";
 
+import arrow from "../../assets/2026/ui/Arrow.png";
+
 import "./ProjectView.css";
 
 const ProjectView = ({ project }) => {
@@ -23,7 +25,8 @@ const ProjectView = ({ project }) => {
             target="_blank"
             rel="noreferrer"
           >
-            CHECK THIS GAME! <span aria-hidden="true">↗</span>
+            CHECK THIS GAME!
+            <img src={arrow} alt="" className="game-link__arrow" />
           </a>
         )}
       </header>
