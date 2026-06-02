@@ -1,0 +1,42 @@
+.mobile-banner {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .mobile-banner {
+    display: block;
+    position: relative;
+    width: 260px;
+    max-width: 100%;
+    margin: 1.5rem auto 1rem;
+    transform: translateX(-11%);
+  }
+}
+
+.mobile-banner__img {
+  width: 100%;
+  display: block;
+}
+
+.mobile-banner__name {
+  position: absolute;
+  left: 24%;
+  right: 0;
+  top: 60%;
+  text-align: center;
+  color: var(--white);
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.mobile-banner__tagline {
+  position: absolute;
+  left: 26%;
+  right: 2%;
+  top: 76%;
+  text-align: center;
+  color: var(--white);
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 1.35;
+}

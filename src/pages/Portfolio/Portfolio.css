@@ -1,0 +1,77 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem 1.5rem;
+}
+
+.card {
+  width: 480px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  animation: fadeInUp 0.5s ease both;
+}
+
+.card__img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 2px 2px 6px rgba(246, 149, 127, 0.35);
+  transition: transform 0.15s ease;
+}
+
+.card:hover .card__img {
+  transform: translateY(-4px);
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--pink-dark);
+  text-align: center;
+}
+
+@media (max-width: 1199px) {
+  .card {
+    width: 320px;
+  }
+}
+
+@media (max-width: 374px) {
+  .card {
+    width: 288px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .grid {
+    grid-template-columns: repeat(2, 480px);
+    justify-content: center;
+  }
+
+  .card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+    .grid {
+        grid-template-columns: repeat(2, 320px);
+        justify-content: center;
+    }
+
+    .card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}

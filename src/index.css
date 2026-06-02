@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&family=Urbanist:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --white: #ffffff;
+  --pink-lightest: #f8cfc9;
+  --pink-light: #f7c4ae;
+  --pink: #f6957f;
+  --pink-dark: #dd6666;
+  --blue: #7c8bc8;
+}
 
 * {
   margin: 0;
@@ -10,47 +19,95 @@ html,
 body,
 #root {
   height: 100%;
-  line-height: 1;
+  line-height: 1.15;
+}
+
+html {
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
-  overflow: hidden;
-  overflow-y: scroll;
+  font-family: "Nunito", sans-serif;
+  background-color: var(--white);
+  color: var(--pink-dark);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
-body.dark {
-  background-color: black;
-  color: hsl(0, 0%, 90%);
+img {
+  display: block;
+  max-width: 100%;
 }
 
-::-webkit-scrollbar {
-  width: 16px;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-::-webkit-scrollbar-track {
-  background: white;
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
-::-webkit-scrollbar-thumb {
-  background: black;
-  border: 6px solid white;
-  border-radius: 12px;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-body.dark::-webkit-scrollbar-track {
-  background: black;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-body.dark::-webkit-scrollbar-thumb {
-  background: hsl(0, 0%, 90%);
-  border-color: black;
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-body.dark::-webkit-scrollbar-thumb:hover {
-  background: white;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

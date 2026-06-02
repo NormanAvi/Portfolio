@@ -1,53 +1,69 @@
-import { useCallback, useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import useMediaQuery from "react-hook-media-query";
+import { useEffect } from "react";
+import { Routes, Route, useLocation, useSearchParams } from "react-router-dom";
 
-import StickyHeader from "../StickyHeader/StickyHeader";
-import Work from "../Work/Work";
-import Image from "../Image/Image";
-import SiteFooter from "../SiteFooter/SiteFooter";
-import About from "../About/About";
+import TopNav from "../components/TopNav/TopNav";
+import SideBanner from "../components/SideBanner/SideBanner";
+import MobileMenu from "../components/MobileMenu/MobileMenu";
+import MobileBanner from "../components/MobileBanner/MobileBanner";
+import CustomScrollbar from "../components/CustomScrollbar/CustomScrollbar";
+import BackToTop from "../components/BackToTop/BackToTop";
+import Portfolio from "../pages/Portfolio/Portfolio";
+import Resume from "../pages/Resume/Resume";
+
+import projects from "../data/projects";
+import experience from "../data/resume";
+
+import bgTexture from "../assets/2026/ui/BG_Texture.png";
+import bulletActive from "../assets/2026/ResumePage/Bullet_Active.png";
+import bulletInactive from "../assets/2026/ResumePage/Bullet_Inactive.png";
 
 import "./App.css";
 
-const App = () => {
-  const [stickyHeaderHeight, setStickyHeaderHeight] = useState(0);
-  const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem("isDarkMode") === "true" || false
-  );
+const warm = (src) => {
+  const img = new Image();
+  img.src = src;
+};
 
-  const toggleDarkMode = useCallback(() => {
-    setIsDarkMode((prevDarkMode) => !prevDarkMode);
-  }, []);
+const App = () => {
+  const location = useLocation();
+  const [searchParams] = useSearchParams();
+  const showMobileBanner =
+    location.pathname === "/" && !searchParams.get("p");
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add("dark");
-      localStorage.setItem("isDarkMode", "true");
-    } else {
-      document.body.classList.remove("dark");
-      localStorage.setItem("isDarkMode", "false");
-    }
-  }, [isDarkMode]);
+    projects.forEach((p) => warm(p.cover));
+    experience.forEach((job) =>
+      (job.logos || []).forEach((logo) => logo.img && warm(logo.img))
+    );
+    warm(bulletActive);
+    warm(bulletInactive);
 
-  const prefersReducedMotion = useMediaQuery("(prefers-reduced-motion)");
+    const timer = setTimeout(() => {
+      projects.forEach((p) => (p.gallery || []).forEach(warm));
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="app">
-      <StickyHeader
-        setStickyHeaderHeight={setStickyHeaderHeight}
-        toggleDarkMode={toggleDarkMode}
-        isDarkMode={isDarkMode}
+      <div
+        className="bg-texture"
+        style={{ backgroundImage: `url(${bgTexture})` }}
       />
-      <main style={{ paddingTop: "3rem" }}>
-        <Routes>
-          <Route path="" element={<Work />} />
-          <Route path="/Portfolio" element={<Work />} />
-          <Route path="/works/:category/:image" element={<Image />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
+      <TopNav />
+      <SideBanner />
+      <MobileMenu />
+      <main className="page">
+        {showMobileBanner && <MobileBanner />}
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Portfolio />} />
+            <Route path="/resume" element={<Resume />} />
+          </Routes>
+        </div>
       </main>
-      <SiteFooter />
+      <CustomScrollbar />
+      <BackToTop />
     </div>
   );
 };

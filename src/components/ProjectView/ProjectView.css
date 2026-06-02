@@ -1,0 +1,145 @@
+.project {
+    padding-bottom: 2rem;
+}
+
+.project__head,
+.project__studio,
+.project__disciplines {
+    animation: fadeInLeft 0.5s ease both;
+}
+
+.project__head {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.project__title {
+    flex: 1;
+    min-width: 0;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--pink-dark);
+    line-height: 1.1;
+}
+
+.game-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.75rem;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 15px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    background: url("../../assets/2026/ui/Bttn_GameLink_Default.png") no-repeat;
+    background-size: 100% 100%;
+    transition: transform 0.1s ease;
+}
+
+.game-link:hover {
+    background-image: url("../../assets/2026/ui/Bttn_GameLink_Pressed.png");
+}
+
+.game-link:active {
+    transform: scale(0.97);
+}
+
+.project__studio {
+    margin-top: 1.75rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--pink-dark);
+}
+
+.project__disciplines {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--pink);
+}
+
+.project__gallery {
+    columns: 2;
+    column-gap: 1rem;
+    margin-top: 2.75rem;
+}
+
+.project__thumb {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    break-inside: avoid;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.15s ease;
+    animation: fadeInUp 0.5s ease both;
+}
+
+.project__thumb:hover {
+    transform: translateY(-3px);
+}
+
+.project__thumb img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 1199px) {
+    .project {
+        padding-top: 100px;
+    }
+
+    .project__head {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project__title {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .project__studio,
+    .project__disciplines {
+        text-align: center;
+        font-size: 16px;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project__gallery {
+        columns: 1;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project__thumb {
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+    .project__gallery {
+        columns: 2;
+        max-width: 680px;
+    }
+
+    .project__thumb {
+        max-width: none;
+    }
+}

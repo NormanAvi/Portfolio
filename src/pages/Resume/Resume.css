@@ -1,0 +1,253 @@
+.resume__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--pink-dark);
+    margin-bottom: 1.5rem;
+    animation: fadeInLeft 0.6s ease both;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 56px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 40px;
+    bottom: 60px;
+    width: 6px;
+    border-radius: 3px;
+    background: var(--pink-lightest);
+}
+
+.tl-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 0.6s ease both;
+}
+
+.tl-bullet {
+    position: absolute;
+    left: -49px;
+    top: 28%;
+    width: 30px;
+    height: 30px;
+}
+
+.tl-card {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.tl-card--large {
+    aspect-ratio: 1720 / 520;
+    background-image: url("../../assets/2026/ResumePage/Container_Large.png");
+}
+
+.tl-card--small {
+    aspect-ratio: 1720 / 376;
+    background-image: url("../../assets/2026/ResumePage/Container_Small.png");
+}
+
+.tl-date {
+    position: absolute;
+    left: 78.6%;
+    right: 1%;
+    text-align: center;
+    color: var(--pink-dark);
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.tl-card--large .tl-date {
+    top: 7%;
+}
+
+.tl-card--small .tl-date {
+    top: 9.5%;
+}
+
+.tl-company {
+    position: absolute;
+    left: 5%;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.tl-card--large .tl-company {
+    top: 27%;
+}
+
+.tl-card--small .tl-company {
+    top: 37%;
+}
+
+.tl-role {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+}
+
+.tl-card--large .tl-role {
+    top: 50%;
+}
+
+.tl-card--small .tl-role {
+    top: 70%;
+}
+
+.tl-logos {
+    position: absolute;
+    left: 4.7%;
+    right: 4.7%;
+    top: 67.7%;
+    bottom: 9.8%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 2.5%;
+}
+
+.tl-logos__label {
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--pink-dark);
+    white-space: nowrap;
+}
+
+.tl-logos__list {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.tl-logos__list img {
+    height: 55%;
+    max-height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.tl-logos__text {
+    font-weight: 900;
+    font-size: 12px;
+    color: var(--pink-dark);
+}
+
+@media (max-width: 1199px) {
+    .resume {
+        padding-top: 100px;
+    }
+
+    .resume__title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .timeline {
+        padding-left: 0;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .timeline::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        top: 28px;
+        bottom: 40px;
+    }
+
+    .tl-bullet {
+        display: none;
+    }
+
+    .tl-card--large {
+        aspect-ratio: 348 / 290;
+        background-image: url("../../assets/2026/phone/Container_Large.png");
+    }
+
+    .tl-card--small {
+        aspect-ratio: 348 / 190;
+        background-image: url("../../assets/2026/phone/ContainerSmall.png");
+    }
+
+    .tl-date {
+        left: 22%;
+        right: 22%;
+        font-size: 13px;
+    }
+
+    .tl-card--large .tl-date {
+        top: 6%;
+    }
+
+    .tl-card--small .tl-date {
+        top: 10.5%;
+    }
+
+    .tl-company {
+        font-size: 15px;
+        right: 5%;
+        text-align: center;
+    }
+
+    .tl-card--large .tl-company {
+        top: 30%;
+        transform: translateY(-50%);
+    }
+
+    .tl-card--large .tl-role {
+        top: 45%;
+    }
+
+    .tl-card--small .tl-company {
+        top: 45%;
+        transform: translateY(-50%);
+    }
+
+    .tl-card--small .tl-role {
+        top: 70%;
+    }
+
+    .tl-role {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .tl-logos {
+        top: 65%;
+        bottom: 5%;
+        left: 6%;
+        right: 7%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.4rem;
+        padding: 0;
+    }
+
+    .tl-logos__list {
+        gap: 1rem;
+    }
+
+    .tl-logos__list img {
+        height: 26px;
+        max-height: 26px;
+    }
+}
+
+@media (max-width: 374px) {
+    .timeline {
+        max-width: 285px;
+    }
+}

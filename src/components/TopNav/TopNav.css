@@ -1,0 +1,40 @@
+.top-nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 5rem;
+}
+
+.top-nav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: var(--pink-dark);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: color 0.12s ease;
+}
+
+.top-nav__link:hover {
+  color: var(--white);
+  background-image: url("../../assets/2026/ui/Bttn_Page_Selected.png");
+}
+
+.top-nav__link.active {
+  color: var(--white);
+  background-image: url("../../assets/2026/ui/Bttn_Page_Pressed.png");
+}
+
+@media (max-width: 1199px) {
+  .top-nav {
+    display: none;
+  }
+}

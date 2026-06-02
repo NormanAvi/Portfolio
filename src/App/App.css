@@ -1,12 +1,54 @@
 .app {
-  max-width: calc(1280px + 2em);
-  padding: 1em;
-  margin: 0 auto;
   position: relative;
+  min-height: 100vh;
 }
 
-@media (max-width: 800px) {
-  .app {
-    padding: 0.5em;
+.bg-texture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.page {
+  position: relative;
+  z-index: 1;
+  padding-top: 1rem;
+  overflow-x: clip;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+@media (max-width: 1199px) {
+  .bg-texture {
+    background-size: auto;
+  }
+
+  .content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    padding-left: 300px;
+  }
+}
+
+@media (min-width: 1320px) {
+  .content {
+    max-width: 1360px;
+    padding-left: 320px;
   }
 }

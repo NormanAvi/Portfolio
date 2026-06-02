@@ -1,0 +1,133 @@
+COLOR CODES.
+
+WHITE #FFFFFF
+LIGHTEST PINK #F8CFC9
+LIGHT PINK #F7C4AE
+PINK #F6957F
+DARK PINK #DD6666
+BLUE #7C8BC8 
+
+Main Page
+----------
+
+*Top Buttons.
+
+(Black 20 #FFFFFF Active #DD6666 Inactive)
+
+PORTFOLIO
+RESUME
+
+*Side Banner.
+
+NORMAN ÁVILA (Black 16 #FFFFFF 
+
+GENERAL ARTIST FOCUSED ON VIDEOGAME DEVELOPMENT (Extrabold 12 #FFFFFF)
+
+CONTACT ME! (Black 12 #FFFFFF)
+
+(links:
+
+IG: https://www.instagram.com/normanavi_art?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==
+
+BS: https://bsky.app/profile/normanavi-art.bsky.social
+
+)
+
+*Project Order and Titles.
+
+(Black 16 #DD6666)
+(Images with Dropshadow #F6957F Blur 4 Y 4)
+
+CUT THE ROPE: MATCH 4 CONTENDERS
+PERSONAL WORK
+CUT THE ROPE: OM NOM'S PICTURE COLLECTION
+KITTY ALCHEMY
+DARTS GAME
+GLOXINIA
+UPPERCUTE
+
+----------
+
+CUT THE ROPE: MATCH 4 CONTENDERS (Bold 32 #DD6666)
+PXL PERFECT STUDIO COLLABORATION WITH ZEPTOLAB (Semibold 20 #DD6666)
+2D ART / UI DESIGN / ANIMATION (Semibold 20 #F6957F)
+
+CHECK THIS GAME!(Black 20 #FFFFFF)
+link: https://www.pixelperfectstudio.mx/2026/03/08/cut-the-rope-match-4-contenders/
+
+----------
+
+PERSONAL WORK (Bold 32 #DD6666)
+
+----------
+
+CUT THE ROPE: OM NOM'S PICTURE COLLECTION (Bold 32 #DD6666)
+PXL PERFECT STUDIO COLLABORATION WITH ZEPTOLAB (Semibold 20 #DD6666)
+2D ART / UI DESIGN / ANIMATION (Semibold 20 #F6957F)
+
+CHECK THIS GAME!(Black 20 #FFFFFF)
+link: https://www.pixelperfectstudio.mx/2025/10/08/om-noms-picture-collection/
+
+----------
+
+KITTY ALCHEMY (Bold 32)
+2D ART / UI DESIGN (Semibold 20 #F6957F)
+
+CHECK THIS GAME!(Black 20 #FFFFFF)
+link: https://jaredfg.itch.io/kitty-alchemy
+
+----------
+
+DARTS GAME (Bold 32)
+BASH N BEYOND (Semibold 20 #DD6666)
+UI DESIGN / ANIMATION (Semibold 20 #F6957F)
+
+----------
+
+GLOXINIA (Bold 32 #DD6666)
+GODDESS GAMES (Semibold 20 #DD6666)
+UI DESIGN (Semibold 20 #F6957F)
+
+CHECK THIS GAME!(Black 20 #FFFFFF)
+link: https://store.steampowered.com/app/4046720/Gloxinia/?l=latam
+
+----------
+
+UPPERCUTE (Bold 32 #DD6666)
+UI DESIGN (Semibold 20 #F6957F)
+
+CHECK THIS GAME!(Black 20 #FFFFFF)
+link: https://store.steampowered.com/app/3151660/Uppercute/
+
+----------
+
+Resume Page
+
+MY WORK EXPERIENCE (Bold 32 #DD6666)
+
+PXL PERFECT STUDIO (Black 20 #FFFFFF)
+2025 - PRESENT (Black 20 #DD6666)
+GENERAL ARTIST | CONCEPT ART | 2D ART | UI DESIGN | ANIMATION (Extrabold 12 #FFFFFF)
+COLLABORATIONS: (Logo LoL) (Logo Rovio) (Logo Zeptolab)
+(Black 12 #DD6666)
+
+CERRO CREATIVO (Black 20 #FFFFFF)
+2024 - PRESENT (Black 20 #DD6666)
+GENERAL ARTIST | CONCEPT ART | 2D ART | UI DESIGN (Extrabold 12 #FFFFFF)
+CLIENTS: (Logo PrettyScar) (Logo Akupara) GODDESS GAMES
+(Black 12 #DD6666)
+
+BASH N BEYOND (Black 20 #FFFFFF)
+2025 - 2026 (Black 20 #DD6666)
+GENERAL ARTIST | UI DESIGN | ANIMATION (Extrabold 12 #FFFFFF)
+
+AT7 | JAGUAR GAMES (Black 20 #FFFFFF)
+2025 (Black 20 #DD6666)
+CONCEPT ARTIST | UI DESIGN (Extrabold 12 #FFFFFF)
+
+SOFTEK | NOVUS | TEC DE MONTERREY (Black 20 #FFFFFF)
+2024 (Black 20 #DD6666)
+GENERAL ARTIST (Extrabold 12 #FFFFFF)
+
+
+

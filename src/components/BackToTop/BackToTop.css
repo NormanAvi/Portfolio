@@ -1,0 +1,22 @@
+.back-to-top {
+  position: fixed;
+  left: 32px;
+  bottom: 24px;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: url("../../assets/2026/ui/Bttn_Up_Default.png") center / contain
+    no-repeat;
+  z-index: 5;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.back-to-top:hover {
+  background-image: url("../../assets/2026/ui/Bttn_Up_Pressed.png");
+}
+
+.back-to-top:active {
+  transform: scale(0.94);
+}
