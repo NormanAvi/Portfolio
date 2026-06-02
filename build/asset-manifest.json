@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0946a986.css",
-    "main.js": "/Portfolio/static/js/main.274f0ec0.js",
+    "main.css": "/Portfolio/static/css/main.5fdaee09.css",
+    "main.js": "/Portfolio/static/js/main.fd3af584.js",
     "static/media/ONPC-1.png": "/Portfolio/static/media/ONPC-1.2237571282cca5afafc4.png",
     "static/media/Uppercute-1.png": "/Portfolio/static/media/Uppercute-1.9045b4449bb8b46bca17.png",
     "static/media/MC4-1.png": "/Portfolio/static/media/MC4-1.ea4ce2bbed810621fe22.png",
@@ -57,11 +57,11 @@
     "static/media/BG_Texture.png": "/Portfolio/static/media/BG_Texture.39ab7c1615dacdd964f4.png",
     "static/media/Logo_PrettyScar.png": "/Portfolio/static/media/Logo_PrettyScar.3b7e220438938d3376d2.png",
     "index.html": "/Portfolio/index.html",
-    "main.0946a986.css.map": "/Portfolio/static/css/main.0946a986.css.map",
-    "main.274f0ec0.js.map": "/Portfolio/static/js/main.274f0ec0.js.map"
+    "main.5fdaee09.css.map": "/Portfolio/static/css/main.5fdaee09.css.map",
+    "main.fd3af584.js.map": "/Portfolio/static/js/main.fd3af584.js.map"
   },
   "entrypoints": [
-    "static/css/main.0946a986.css",
-    "static/js/main.274f0ec0.js"
+    "static/css/main.5fdaee09.css",
+    "static/js/main.fd3af584.js"
   ]
 }
