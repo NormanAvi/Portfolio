@@ -148,9 +148,35 @@
 }
 
 @media (min-width: 700px) and (max-width: 1199px) {
+    .project__head {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: left;
+        max-width: 680px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project__title {
+        flex: 1;
+        width: auto;
+        text-align: left;
+    }
+
+    .project__meta,
+    .project__description {
+        text-align: left;
+        max-width: 680px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .project__gallery {
         columns: 2;
         max-width: 680px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .project__thumb {

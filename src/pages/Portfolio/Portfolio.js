@@ -1,6 +1,7 @@
 import { useSearchParams } from "react-router-dom";
 
 import ProjectView from "../../components/ProjectView/ProjectView";
+import PersonalWorkView from "../../components/PersonalWorkView/PersonalWorkView";
 import projects from "../../data/projects";
 
 import "./Portfolio.css";
@@ -15,6 +16,9 @@ const Portfolio = () => {
   };
 
   if (selected) {
+    if (selected.sections) {
+      return <PersonalWorkView project={selected} />;
+    }
     return <ProjectView project={selected} />;
   }
 

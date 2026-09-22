@@ -1,0 +1,34 @@
+.personal-work {
+  padding-bottom: 2rem;
+}
+
+.personal-work__title {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--pink-dark);
+  line-height: 1.1;
+  animation: fadeInLeft 0.5s ease both;
+}
+
+@media (max-width: 1199px) {
+  .personal-work {
+    padding-top: 100px;
+  }
+
+  .personal-work__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 699px) {
+  .personal-work {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+  .personal-work__title {
+    text-align: left;
+  }
+}

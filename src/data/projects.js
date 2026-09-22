@@ -27,14 +27,23 @@ import mc4 from "../assets/2026/MatchContenders/MC4-4.png";
 import mc5 from "../assets/2026/MatchContenders/MC4-5.png";
 import mc6 from "../assets/2026/MatchContenders/MC4-6.png";
 
-import pw1 from "../assets/2026/Personal/PersonalWork-1.png";
-import pw2 from "../assets/2026/Personal/PersonalWork-2.png";
+import pw1New from "../assets/2026/Personal/PersonalWork-1-new.png";
+import pw2New from "../assets/2026/Personal/PersonalWork-2-new.png";
 import pw3 from "../assets/2026/Personal/PersonalWork-3.png";
 import pw4 from "../assets/2026/Personal/PersonalWork-4.png";
 import pw5 from "../assets/2026/Personal/PersonalWork-5.png";
 import pw6 from "../assets/2026/Personal/PersonalWork-6.png";
 import pw7 from "../assets/2026/Personal/PersonalWork-7.png";
 import pw8 from "../assets/2026/Personal/PersonalWork-8.png";
+
+import ob1 from "../assets/2026/Personal/OdiseaBurbujas/OB-1.png";
+import ob2 from "../assets/2026/Personal/OdiseaBurbujas/OB-2.png";
+import ob3 from "../assets/2026/Personal/OdiseaBurbujas/OB-3.png";
+import ob4 from "../assets/2026/Personal/OdiseaBurbujas/OB-4.png";
+
+import slm1 from "../assets/2026/Personal/SLM/SLM-1.png";
+import slm2 from "../assets/2026/Personal/SLM/SLM-2.png";
+import slm3 from "../assets/2026/Personal/SLM/SLM-3.png";
 
 import onpc1 from "../assets/2026/PictureCollection/ONPC-1.png";
 import onpc2New from "../assets/2026/PictureCollection/ONPC-2-new.png";
@@ -116,7 +125,29 @@ const projects = [
     id: "personal-work",
     title: "PERSONAL WORK",
     cover: personalCover,
-    gallery: [pw1, pw2, pw3, pw4, pw5, pw6, pw7, pw8],
+    sections: [
+      {
+        id: "odisea-burbujas",
+        title: "Odisea Burbujas - Animated Series Concept",
+        disciplines: "Work still in progress!",
+        description:
+          "Odisea Burbujas is a mexican show that first aired on the 80s where a scientist and his animal assistants travel through time and space learning science and ecology. I want to reimagine it as an animated series with a retrofuturistic aesthetic.",
+        gallery: [ob1, ob2, ob3, ob4],
+      },
+      {
+        id: "illustration",
+        title: "Illustration",
+        disciplines: "Some of the latest works I’ve worked on!",
+        gallery: [pw1New, pw2New, pw3, pw4, pw5, pw6, pw7, pw8],
+      },
+      {
+        id: "solo-las-mas",
+        title: "Solo Las Más 2 Figure Collection",
+        description:
+          "3D Concept that I developed for fun, featuring the promo looks for the participants of the second season of SLM 2.",
+        gallery: [slm1, slm2, slm3],
+      },
+    ],
   },
   {
     id: "om-noms-picture-collection",

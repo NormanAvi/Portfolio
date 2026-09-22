@@ -40,6 +40,13 @@
   }
 }
 
+@media (min-width: 700px) and (max-width: 1199px) {
+  .content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .content {
     padding-left: 300px;

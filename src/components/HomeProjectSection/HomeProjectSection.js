@@ -4,7 +4,7 @@ import Lightbox from "../Lightbox/Lightbox";
 
 import "./HomeProjectSection.css";
 
-const HomeProjectSection = ({ project }) => {
+const HomeProjectSection = ({ project, align = "center", size = "sm" }) => {
   const gallery = project.gallery || [];
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -13,7 +13,9 @@ const HomeProjectSection = ({ project }) => {
   const next = () => setOpenIndex((i) => (i + 1) % gallery.length);
 
   return (
-    <section className="home-project">
+    <section
+      className={`home-project home-project--${align} home-project--${size}`}
+    >
       <h2 className="home-project__title">{project.title}</h2>
       {project.disciplines && (
         <p className="home-project__disciplines">{project.disciplines}</p>
