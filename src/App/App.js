@@ -5,8 +5,8 @@ import TopNav from "../components/TopNav/TopNav";
 import SideBanner from "../components/SideBanner/SideBanner";
 import MobileMenu from "../components/MobileMenu/MobileMenu";
 import MobileBanner from "../components/MobileBanner/MobileBanner";
-import CustomScrollbar from "../components/CustomScrollbar/CustomScrollbar";
 import BackToTop from "../components/BackToTop/BackToTop";
+import MainPage from "../pages/MainPage/MainPage";
 import Portfolio from "../pages/Portfolio/Portfolio";
 import Resume from "../pages/Resume/Resume";
 
@@ -57,12 +57,12 @@ const App = () => {
         {showMobileBanner && <MobileBanner />}
         <div className="content">
           <Routes>
-            <Route path="/" element={<Portfolio />} />
+            <Route path="/" element={<MainPage />} />
+            <Route path="/works" element={<Portfolio />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
         </div>
       </main>
-      <CustomScrollbar />
       <BackToTop />
     </div>
   );

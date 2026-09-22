@@ -31,9 +31,16 @@ const ProjectView = ({ project }) => {
         )}
       </header>
 
-      {project.studio && <p className="project__studio">{project.studio}</p>}
-      {project.disciplines && (
-        <p className="project__disciplines">{project.disciplines}</p>
+      {(project.disciplines || project.date) && (
+        <div className="project__meta">
+          {project.disciplines && (
+            <p className="project__disciplines">{project.disciplines}</p>
+          )}
+          {project.date && <p className="project__date">{project.date}</p>}
+        </div>
+      )}
+      {project.description && (
+        <p className="project__description">{project.description}</p>
       )}
 
       <div className="project__gallery">

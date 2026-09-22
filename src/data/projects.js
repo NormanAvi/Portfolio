@@ -1,3 +1,4 @@
+import abspCover from "../assets/2026/MainPage/ABSP-1.png";
 import mc4Cover from "../assets/2026/MainPage/MC4-1.png";
 import personalCover from "../assets/2026/MainPage/PersonalWork-1.png";
 import onpcCover from "../assets/2026/MainPage/ONPC-1.png";
@@ -6,7 +7,20 @@ import dartsCover from "../assets/2026/MainPage/Darts-1.png";
 import gloxiniaCover from "../assets/2026/MainPage/Gloxinia-1.png";
 import uppercuteCover from "../assets/2026/MainPage/Uppercute-1.png";
 
+import absp1 from "../assets/2026/AngryBirds/ABSP-1.png";
+import absp2 from "../assets/2026/AngryBirds/ABSP-2.png";
+import absp3 from "../assets/2026/AngryBirds/ABSP-3.png";
+import absp4 from "../assets/2026/AngryBirds/ABSP-4.png";
+import absp5 from "../assets/2026/AngryBirds/ABSP-5.png";
+import absp6 from "../assets/2026/AngryBirds/ABSP-6.png";
+import absp7 from "../assets/2026/AngryBirds/ABSP-7.png";
+import absp8 from "../assets/2026/AngryBirds/ABSP-8.png";
+import absp9 from "../assets/2026/AngryBirds/ABSP-9.png";
+import absp10 from "../assets/2026/AngryBirds/ABSP-10.png";
+
 import mc1 from "../assets/2026/MatchContenders/MC4-1.png";
+import mc2New from "../assets/2026/MatchContenders/MC4-2-new.png";
+import mc3New from "../assets/2026/MatchContenders/MC4-3-new.png";
 import mc2 from "../assets/2026/MatchContenders/MC4-2.png";
 import mc3 from "../assets/2026/MatchContenders/MC4-3.png";
 import mc4 from "../assets/2026/MatchContenders/MC4-4.png";
@@ -23,6 +37,8 @@ import pw7 from "../assets/2026/Personal/PersonalWork-7.png";
 import pw8 from "../assets/2026/Personal/PersonalWork-8.png";
 
 import onpc1 from "../assets/2026/PictureCollection/ONPC-1.png";
+import onpc2New from "../assets/2026/PictureCollection/ONPC-2-new.png";
+import onpc3New from "../assets/2026/PictureCollection/ONPC-3-new.png";
 import onpc2 from "../assets/2026/PictureCollection/ONPC-2.png";
 import onpc3 from "../assets/2026/PictureCollection/ONPC-3.png";
 import onpc4 from "../assets/2026/PictureCollection/ONPC-4.png";
@@ -53,6 +69,8 @@ import glox1 from "../assets/2026/Gloxinia/Gloxinia-1.png";
 import glox2 from "../assets/2026/Gloxinia/Gloxinia-2.png";
 import glox3 from "../assets/2026/Gloxinia/Gloxinia-3.png";
 import glox4 from "../assets/2026/Gloxinia/Gloxinia-4.png";
+import glox5 from "../assets/2026/Gloxinia/Gloxinia-5.png";
+import glox6 from "../assets/2026/Gloxinia/Gloxinia-6.gif";
 
 import upp1 from "../assets/2026/Uppercute/Uppercute-1.png";
 import upp2 from "../assets/2026/Uppercute/Uppercute-2.png";
@@ -62,13 +80,37 @@ import upp5 from "../assets/2026/Uppercute/Uppercute-5.png";
 
 const projects = [
   {
+    id: "angry-birds-surfing-piggies",
+    title: "ANGRY BIRDS: SURFING PIGGIES",
+    disciplines: "Visual Development / 2D Art / UI/UX Design / Animation",
+    date: "December 2025 - June 2026.",
+    description:
+      "Angry Birds: Surfing Piggies is an educational game developed by PXL Perfect Studio and launched by Legends of Learning in collaboration with Rovio.",
+    link: "https://teachers.legendsoflearning.com/games/4763",
+    cover: abspCover,
+    gallery: [
+      absp1,
+      absp2,
+      absp3,
+      absp4,
+      absp5,
+      absp6,
+      absp7,
+      absp8,
+      absp9,
+      absp10,
+    ],
+  },
+  {
     id: "match-4-contenders",
     title: "CUT THE ROPE: MATCH 4 CONTENDERS",
-    studio: "PXL PERFECT STUDIO COLLABORATION WITH ZEPTOLAB",
-    disciplines: "2D ART / UI DESIGN / ANIMATION",
+    disciplines: "Visual Development / 2D Art / UI/UX Design / Animation",
+    date: "August 2025 - November 2025.",
+    description:
+      "Cut The Rope: Match 4 Contenders is an educational game developed by PXL Perfect Studio and launched by Legends of Learning in official collaboration with Zeptolab.",
     link: "https://www.pixelperfectstudio.mx/2026/03/08/cut-the-rope-match-4-contenders/",
     cover: mc4Cover,
-    gallery: [mc1, mc2, mc3, mc4, mc5, mc6],
+    gallery: [mc1, mc2New, mc3New, mc2, mc3, mc4, mc5, mc6],
   },
   {
     id: "personal-work",
@@ -79,16 +121,31 @@ const projects = [
   {
     id: "om-noms-picture-collection",
     title: "CUT THE ROPE: OM NOM'S PICTURE COLLECTION",
-    studio: "PXL PERFECT STUDIO COLLABORATION WITH ZEPTOLAB",
-    disciplines: "2D ART / UI DESIGN / ANIMATION",
+    disciplines: "Visual Development / 2D Art / UI/UX Design / Animation",
+    date: "May 2025 - August 2025.",
+    description:
+      "Cut The Rope: Om Nom's Picture Collection is an educational game developed by PXL Perfect Studio and launched by Legends of Learning in official collaboration with Zeptolab.",
     link: "https://www.pixelperfectstudio.mx/2025/10/08/om-noms-picture-collection/",
     cover: onpcCover,
-    gallery: [onpc1, onpc2, onpc3, onpc4, onpc5, onpc6, onpc7],
+    gallery: [
+      onpc1,
+      onpc2New,
+      onpc3New,
+      onpc2,
+      onpc3,
+      onpc4,
+      onpc5,
+      onpc6,
+      onpc7,
+    ],
   },
   {
     id: "kitty-alchemy",
     title: "KITTY ALCHEMY",
-    disciplines: "2D ART / UI DESIGN",
+    disciplines: "Visual Development / 2D Art / UI/UX Design",
+    date: "2024",
+    description:
+      "Kitty Alchemy was the first videogame where I worked on, developed by JF games and launched on Itch.io",
     link: "https://jaredfg.itch.io/kitty-alchemy",
     cover: kittyCover,
     gallery: [ka1, ka2, ka3, ka4, ka5, ka6, ka7],
@@ -96,8 +153,10 @@ const projects = [
   {
     id: "darts-game",
     title: "DARTS GAME",
-    studio: "BASH N BEYOND",
-    disciplines: "UI DESIGN / ANIMATION",
+    disciplines: "Visual Development / 2D Art and Animation / UI/UX Design",
+    date: "January 2024 - June 2025",
+    description:
+      "A darts game developed for Bash n Beyond that was implemented on their custom hardware system.",
     cover: dartsCover,
     gallery: [
       darts1,
@@ -115,16 +174,21 @@ const projects = [
   {
     id: "gloxinia",
     title: "GLOXINIA",
-    studio: "GODDESS GAMES",
-    disciplines: "UI DESIGN",
+    disciplines: "UI/UX Design",
+    date: "March 2025 - Present",
+    description:
+      "Gloxinia is a rhythm dancing FMV game currently being developed by Goddess Games and soon to be launched on Steam.",
     link: "https://store.steampowered.com/app/4046720/Gloxinia/?l=latam",
     cover: gloxiniaCover,
-    gallery: [glox1, glox2, glox3, glox4],
+    gallery: [glox1, glox2, glox3, glox4, glox5, glox6],
   },
   {
     id: "uppercute",
     title: "UPPERCUTE",
-    disciplines: "UI DESIGN",
+    disciplines: "UI/UX Design",
+    date: "January 2025 - March 2025",
+    description:
+      "Uppercute is a 3D action platformer currently being developed by PrettyScar and soon to be launched on Steam.",
     link: "https://store.steampowered.com/app/3151660/Uppercute/",
     cover: uppercuteCover,
     gallery: [upp1, upp2, upp3, upp4, upp5],

@@ -19,20 +19,23 @@ const Portfolio = () => {
   }
 
   return (
-    <div className="grid">
-      {projects.map((project, index) => (
-        <button
-          key={project.id}
-          type="button"
-          className="card"
-          style={{ animationDelay: `${index * 0.07}s` }}
-          onClick={() => openProject(project.id)}
-        >
-          <img src={project.cover} alt={project.title} className="card__img" />
-          <span className="card__title">{project.title}</span>
-        </button>
-      ))}
-    </div>
+    <>
+      <p className="works-intro">Check out the projects I’ve worked on!</p>
+      <div className="grid">
+        {projects.map((project, index) => (
+          <button
+            key={project.id}
+            type="button"
+            className="card"
+            style={{ animationDelay: `${index * 0.07}s` }}
+            onClick={() => openProject(project.id)}
+          >
+            <img src={project.cover} alt={project.title} className="card__img" />
+            <span className="card__title">{project.title}</span>
+          </button>
+        ))}
+      </div>
+    </>
   );
 };
 

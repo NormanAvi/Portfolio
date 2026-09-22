@@ -32,7 +32,10 @@ const MobileMenu = () => {
           <div className="mobile-menu__backdrop" onClick={close} />
           <nav className="mobile-menu__panel">
             <NavLink to="/" end onClick={close} className="mobile-menu__link">
-              PORTFOLIO
+              MAIN PAGE
+            </NavLink>
+            <NavLink to="/works" onClick={close} className="mobile-menu__link">
+              WORKS
             </NavLink>
             <NavLink to="/resume" onClick={close} className="mobile-menu__link">
               RESUME

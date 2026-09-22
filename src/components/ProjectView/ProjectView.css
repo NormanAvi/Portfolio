@@ -3,8 +3,8 @@
 }
 
 .project__head,
-.project__studio,
-.project__disciplines {
+.project__meta,
+.project__description {
     animation: fadeInLeft 0.5s ease both;
 }
 
@@ -17,8 +17,8 @@
 .project__title {
     flex: 1;
     min-width: 0;
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 900;
+    font-size: 20px;
     color: var(--pink-dark);
     line-height: 1.1;
 }
@@ -53,18 +53,26 @@
     margin-left: 0.4rem;
 }
 
-.project__studio {
-    margin-top: 1.75rem;
+.project__meta {
+    margin-top: 16px;
+}
+
+.project__disciplines,
+.project__date {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--pink-dark);
 }
 
-.project__disciplines {
+.project__date {
+    margin-top: 0.25rem;
+}
+
+.project__description {
     margin-top: 1rem;
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--pink);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--pink-dark);
 }
 
 .project__gallery {
@@ -119,10 +127,9 @@
         font-size: 20px;
     }
 
-    .project__studio,
-    .project__disciplines {
+    .project__meta,
+    .project__description {
         text-align: center;
-        font-size: 16px;
         max-width: 270px;
         margin-left: auto;
         margin-right: auto;

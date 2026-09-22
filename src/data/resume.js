@@ -6,17 +6,6 @@ import logoAkupara from "../assets/2026/ResumePage/Logo_Akupara.png";
 
 const experience = [
   {
-    company: "PXL PERFECT STUDIO",
-    period: "2025 - PRESENT",
-    role: "GENERAL ARTIST | CONCEPT ART | 2D ART | UI DESIGN | ANIMATION",
-    logosLabel: "COLLABORATIONS:",
-    logos: [
-      { img: logoLegends, alt: "Legends of Learning" },
-      { img: logoRovio, alt: "Rovio" },
-      { img: logoZeptolab, alt: "Zeptolab" },
-    ],
-  },
-  {
     company: "CERRO CREATIVO",
     period: "2024 - PRESENT",
     role: "GENERAL ARTIST | CONCEPT ART | 2D ART | UI DESIGN",
@@ -25,6 +14,17 @@ const experience = [
       { img: logoPrettyScar, alt: "Pretty Scar" },
       { img: logoAkupara, alt: "Akupara" },
       { text: "GODDESS GAMES" },
+    ],
+  },
+  {
+    company: "PXL PERFECT STUDIO",
+    period: "2025 - 2026",
+    role: "GENERAL ARTIST | CONCEPT ART | 2D ART | UI DESIGN | ANIMATION",
+    logosLabel: "COLLABORATIONS:",
+    logos: [
+      { img: logoLegends, alt: "Legends of Learning" },
+      { img: logoRovio, alt: "Rovio" },
+      { img: logoZeptolab, alt: "Zeptolab" },
     ],
   },
   {

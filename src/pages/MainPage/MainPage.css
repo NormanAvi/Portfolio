@@ -1,0 +1,20 @@
+.main-page {
+  width: 100%;
+  min-height: 60vh;
+}
+
+.main-page__intro {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (min-width: 1200px) {
+  .main-page__intro {
+    font-size: 16px;
+  }
+}
